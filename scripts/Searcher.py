@@ -2,10 +2,11 @@
 Kyle Tennison
 November 4, 2022
 
-Searcher Object: Computers variable matches and searches for continuous
-    and categorical correlation. Returns significant r-values for continuous
-    in out.txt. Returns series of csv-format heatmap (and their expected 
-    values) in WRITEDIR (defined in constants.py) directory. 
+Searcher Class: 
+Computers variable matches and searches for continuous
+and categorical correlation. Returns significant r-values for continuous
+in out.txt. Returns series of csv-format heatmap (and their expected 
+values) in WRITEDIR (defined in constants.py) directory. 
 
 '''
 
@@ -16,27 +17,7 @@ import scipy.stats
 from constants import *
 from Student import Student
 from tools import *
-
-class Match:
-    '''Store the names and basic info on two matching variables.'''
-
-    def __init__(self, f1, f2, sig, isCont) -> None:
-        self.f1 = f1 
-        self.f2 = f2 
-        self.sig = sig
-        self.isCont = isCont
-        self.sortIndex = sig + 100 if isCont else -100
-
-    def __str__(self) -> str:
-        if self.isCont:
-            rounded = round((self.sig/0.5), 5)
-            return (f"r={rounded} for "
-                    f"{self.f1} and {self.f2} regression line.")
-        else:
-            rounded = round(self.sig * 100, 0)
-            return (f"{rounded}% change between "
-                    f"{self.f1} and {self.f2} estimated & expected.")
-
+from Match import Match
 
 class Searcher:
 
@@ -396,7 +377,6 @@ class Searcher:
 
                     line = line[:-1] + "\n"
                     f.write(line)
-
 
     def _sort_matched(self) -> None:
         '''

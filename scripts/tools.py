@@ -28,8 +28,8 @@ def setup() -> None:
     Pre: 
         None
     Pose:
-        Changes os environment path'''
-
+        Changes os environment path
+    '''
     # Change directory to current file
     abspath = os.path.abspath(__file__)
     dname = os.path.dirname(abspath)
@@ -40,7 +40,7 @@ def setup() -> None:
     purgeFolder(dname)
 
 def bold(text:str) -> str:
-    '''Returns text with bold encoding.'''
+    ''' Returns text with bold encoding.'''
     return bcolors.BOLD + text + bcolors.ENDC
 
 def red(text:str) -> str:
@@ -48,7 +48,7 @@ def red(text:str) -> str:
     return bcolors.FAIL + text + bcolors.ENDC
 
 def green(text:str) -> str:
-    '''Returns text with green encoding'''
+    ''' Returns text with green encoding'''
     return bcolors.OKGREEN + text + bcolors.ENDC
 
 def warn(text:str) -> str:
@@ -56,12 +56,12 @@ def warn(text:str) -> str:
     return bcolors.WARNING + text + bcolors.ENDC
 
 def resetLog() -> None:
-    '''Purge LOGFILE to make room for new program'''
+    ''' Purge LOGFILE to make room for new program'''
     with open(LOGFILE, 'w') as f: 
         f.write('')
 
-def purgeFolder(cwd) -> None: 
-    '''Purge WRITEDIR files for the updated ones'''
+def purgeFolder(cwd: str) -> None: 
+    ''' Purge WRITEDIR files for the updated ones'''
 
     # Delete directory
     path = f"{cwd}/{WRITEDIR}/"
@@ -82,7 +82,14 @@ def log(text:str, end:str='\n', hasHeader:bool=True) -> None:
       Prints to console.
       Modifies LOGFILE
       No return
-      '''
+    '''
+
+    # Get rid of color headers from string
+    for color in [i for i in bcolors.__dict__.values() if isinstance(i, str)]:
+        if color in text:
+            text = text.replace(color, '')
+
+    # Log text
     if hasHeader: print(datetime.now(), end=' ')
     print(text, end=end, flush=True)
     with open(LOGFILE, 'a') as f:

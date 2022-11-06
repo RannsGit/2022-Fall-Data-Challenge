@@ -2,20 +2,22 @@
 Kyle Tennison
 November 1, 2022
 
-Student Object: Stores data attributes for each student
+Student Class: 
+Stores data attributes for each student. Gets fields form raw csv line.
+Validates data length; raises ValueError if invalid. 
 '''
 
 from constants import *
 from tools import *
 
 class Student:
-    def __init__(self, raw):
+    def __init__(self, raw) -> None:
         self.raw = raw
         self.fields = self._create_fields(raw)
         self.dict = self._create_dict(self.fields)
 
     @staticmethod
-    def _create_dict(fields):
+    def _create_dict(fields) -> dict:
         '''
         Map field headers to values
         Pre:
@@ -23,20 +25,19 @@ class Student:
         Post:
           (dict)        - Dict containing str keys to field values.
         '''
-
         d = {} 
         for i in range(len(FIELD_HEADERS)): 
             d[FIELD_HEADERS[i]] = fields[i]
 
         return d
 
-    def get_field(self, field, d=None):
+    def get_field(self, field, d=None) -> any:
         '''
         Get a field from the student dictionary.
         Pre:
           field (str)   - Key name to search for
           d (any)       - Return value if key not found
-          '''
+        '''
         try:
             return self.dict[field]
         except:
@@ -46,7 +47,7 @@ class Student:
         
 
     @staticmethod
-    def _create_fields(raw):
+    def _create_fields(raw) -> list:
         '''
         Get student fields as list. Validate that raw data is valid.
         Pre:
