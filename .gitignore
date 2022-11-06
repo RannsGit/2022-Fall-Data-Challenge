@@ -3,3 +3,4 @@
 *.pyc
 *.DS_Store
 .gitattributes
+outputs/.DS_Store
