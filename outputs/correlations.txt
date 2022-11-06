@@ -1,0 +1,51 @@
+Found the following matches: 
+	53.0% change between MOSTIMPT and DSBLTY estimated & expected.
+	50.0% change between SEGRADEQ and FCSCHOOL estimated & expected.
+	44.0% change between SEGRADEQ and FCTEACHR estimated & expected.
+	47.0% change between SEGRADEQ and DSBLTY estimated & expected.
+	55.0% change between FCSCHOOL and FCTEACHR estimated & expected.
+	59.0% change between FCSCHOOL and FCSTDS estimated & expected.
+	60.0% change between FCSCHOOL and FCORDER estimated & expected.
+	58.0% change between FCSCHOOL and FCSUPPRT estimated & expected.
+	56.0% change between FCTEACHR and FCSTDS estimated & expected.
+	52.0% change between FCTEACHR and FCORDER estimated & expected.
+	59.0% change between FCTEACHR and FCSUPPRT estimated & expected.
+	58.0% change between FCSTDS and FCORDER estimated & expected.
+	53.0% change between FCSTDS and FCSUPPRT estimated & expected.
+	48.0% change between FCORDER and FCSUPPRT estimated & expected.
+	62.0% change between FHAMOUNT and FHCAMT estimated & expected.
+	48.0% change between FHCHECKX and FHHELP estimated & expected.
+	46.0% change between HDHEALTH and DSBLTY estimated & expected.
+	44.0% change between CSPEAKX and SEFUTUREX estimated & expected.
+	76.0% change between CSPEAKX and DSBLTY estimated & expected.
+	75.0% change between CSPEAKX and RACEETH estimated & expected.
+	50.0% change between RELATION and P1REL estimated & expected.
+	64.0% change between RELATION and P1SEX estimated & expected.
+	58.0% change between RELATION and P1MRSTA estimated & expected.
+	61.0% change between RELATION and HHPARN19X estimated & expected.
+	41.0% change between RELATION and RACEETH estimated & expected.
+	85.0% change between P1REL and HHPARN19X estimated & expected.
+	59.0% change between P1MRSTA and P2GUARD estimated & expected.
+	64.0% change between P1MRSTA and HHPARN19X estimated & expected.
+	59.0% change between P1MRSTA and HHPARN19_BRD estimated & expected.
+	51.0% change between P2GUARD and HHPARN19X estimated & expected.
+	74.0% change between P2GUARD and HHPARN19_BRD estimated & expected.
+	44.0% change between TTLHHINC and OWNRNTHB estimated & expected.
+	46.0% change between TTLHHINC and HHPARN19X estimated & expected.
+	44.0% change between TTLHHINC and HHPARN19_BRD estimated & expected.
+	42.0% change between TTLHHINC and PARGRADEX estimated & expected.
+	66.0% change between HHPARN19X and HHPARN19_BRD estimated & expected.
+	r=-1.94556 for ALLGRADEX and CDOBYY regression line.
+	r=-0.82701 for P1AGE and CDOBYY regression line.
+	r=-0.63962 for ALLGRADEX and SEGRADES regression line.
+	r=-0.5646 for FHWKHRS and CDOBYY regression line.
+	r=-0.44345 for FHWKHRS and SEGRADES regression line.
+	r=-0.27106 for P1AGE and SEGRADES regression line.
+	r=-0.24349 for HHTOTALXX and P1AGE regression line.
+	r=-0.21873 for P1AGE and NUMSIBSX regression line.
+	r=0.33051 for FHWKHRS and P1AGE regression line.
+	r=0.59179 for ALLGRADEX and FHWKHRS regression line.
+	r=0.60754 for CDOBYY and SEGRADES regression line.
+	r=0.83167 for ALLGRADEX and P1AGE regression line.
+	r=1.54471 for HHTOTALXX and NUMSIBSX regression line.
+	r=1.56153 for P1HRSWK and P1MTHSWRK regression line.

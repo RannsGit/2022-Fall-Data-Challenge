@@ -1,0 +1,21 @@
+
+2022-11-06 13:27:20.027027 > Searcher init
+2022-11-06 13:27:20.244852 > [91mStudent objects created with 1 invalid student(s).[0m
+2022-11-06 13:27:20.245043 > There are [1m91[0m values to be searched
+2022-11-06 13:27:20.245314 > Got matching fields.
+
+2022-11-06 13:27:20.245366 > 
+2022-11-06 13:27:35.331484 > Searching Continuous Fields... 
+2022-11-06 13:27:36.082704 > [92mDone searching continuous data. 14 matches[0m
+2022-11-06 13:27:36.082815 > 
+~~~~~~~~~~~~~~~~~~~~
+
+2022-11-06 13:27:36.083818 > There are [1m1770[0m values to be searched
+2022-11-06 13:27:36.083862 > Got matching fields.
+
+2022-11-06 13:27:36.083941 > 
+2022-11-06 13:27:38.291317 > Searching Binary Fields... 
+2022-11-06 13:27:57.030606 > [92mDone searching categorical data. 36 matches
+[0m
+2022-11-06 13:27:57.031504 > Search complete.
+2022-11-06 13:27:57.031567 > Sorted matched results
